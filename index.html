@@ -2,9 +2,72 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Macallister Statham</title>
+    <title>MACALLISTER.</title>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-Hello This is my first webpage
+
+    <header>
+      <p id="head">MACALLISTER.</p>
+      <p class="by">"Homepage" Iml400.</p>
+      <p class="by">Spring 2020.</p>
+    </header>
+
+    <div class="container">
+      <div class="column">
+        <a href="weeklies.html"><img src="yoo.jpg" class="image"alt=""></a>
+          <div class="middle">
+            <div class="text">WEEKLIES</div>
+          </div>
+      </div>
+
+      <div class="column">
+        <a href="prjoects.html"><img src="yooo.jpg" class="image"alt=""></a>
+          <div class="middle2">
+            <div class="text">PROJECTS</div>
+          </div>
+      </div>
+    </div>
+
+      <div id="clockbox"></div>
+
+        <script type="text/javascript">
+        function GetClock(){
+        var d=new Date();
+        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+        if(nhour==0){ap=" AM";nhour=12;}
+        else if(nhour<12){ap=" AM";}
+        else if(nhour==12){ap=" PM";}
+        else if(nhour>12){ap=" PM";nhour-=12;}
+
+        if(nmin<=9) nmin="0"+nmin;
+        if(nsec<=9) nsec="0"+nsec;
+
+        var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+        document.getElementById('clockbox').innerHTML=clocktext;
+        }
+
+        GetClock();
+        setInterval(GetClock,1000);
+        </script>
+
+      <div class="text2">
+        Please explore with respect. c.2020 All rights reserved.
+      </div>
+
+      <div class="logo">
+        <a href="https://www.instagram.com/maxstatham_/" target="_blank">
+          <img class="insta" src="instagram.png" alt=""></a>
+
+          <a href="https://www.facebook.com/max.statham.54" target="_blank">
+            <img class="fb" src="facebook.png" alt=""></a>
+
+          <a href="https://www.linkedin.com/in/max-statham-1a3b61123/" target="_blank">
+            <img class="linkdin" src="linkedin.png" alt=""></a>
+
+      </div>
+
+
   </body>
 </html>

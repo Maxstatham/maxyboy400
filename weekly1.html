@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="weekly.css">
+    <title>WEEKLY1</title>
+  </head>
+  <body>
+
+    <header>
+      <p id="head">MACALLISTER.</p>
+      <p class="by">"WEEKLY1" Iml400.</p>
+      <p class="by">Spring 2020.</p>
+    </header>
+
+    <div class="container">
+      <p>Vaster Than Empires and More Slow by Ursula K. Le Guin was a compelling read. Throughout the text, a lot of ideas stood out to me, particularly how each character engaged with Osden. As a person who senses and feels true emotions emitted from other sentients, Osden absorbs what is emitted and releases it in his actions. In a sense, Osden is a mirror of all emotions around him.</p>
+
+      <p>As I was reading, I wondered how I would interact with a person like Osden. Would Osden be happy, sad, angry or judgemental? As intelligent beings, we act on a combination of emotion and logic. Sometimes we may not act how we are feeling. So the idea of my raw inner emotions being reflected back at me in a human form (being Osden) is quite a confronting image. Would I like what I see?</p>
+
+      <p>Our discussion in class about ambiguity was extremely engaging and adds to my initial thoughts. Life is very grey, there is not a lot of black and white. When Osden chooses to stay on the planet, he chooses a life of pure unambiguous action where the only other sentient doesn’t singularly think or act. For Osden this was better than living in the confusing world of grey. So does this mean that it’s better to live unambiguously. As humans it’s impossible to live in black and white with the society we have created. I wonder if it was intended for us to live ambiguous lives because of our intelligence. Or would it be better if we weren’t?</p>
+      </div>
+
+      <div id="clockbox"></div>
+
+        <script type="text/javascript">
+        function GetClock(){
+        var d=new Date();
+        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+        if(nhour==0){ap=" AM";nhour=12;}
+        else if(nhour<12){ap=" AM";}
+        else if(nhour==12){ap=" PM";}
+        else if(nhour>12){ap=" PM";nhour-=12;}
+
+        if(nmin<=9) nmin="0"+nmin;
+        if(nsec<=9) nsec="0"+nsec;
+
+        var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+        document.getElementById('clockbox').innerHTML=clocktext;
+        }
+
+        GetClock();
+        setInterval(GetClock,1000);
+        </script>
+
+      <div class="text2">
+        Please explore with respect. c.2020 All rights reserved.
+      </div>
+
+      <div class="home">
+        <a href="weeklies.html">Back.</a>
+      </div>
+
+      <div class="logo">
+        <a href="https://www.instagram.com/maxstatham_/" target="_blank">
+          <img class="insta" src="instagram.png" alt=""></a>
+
+          <a href="https://www.facebook.com/max.statham.54" target="_blank">
+            <img class="fb" src="facebook.png" alt=""></a>
+
+          <a href="https://www.linkedin.com/in/max-statham-1a3b61123/" target="_blank">
+            <img class="linkdin" src="linkedin.png" alt=""></a>
+
+      </div>
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WORK</title>
+    <link rel="stylesheet" href="work.css">
+  </head>
+  <body>
+
+    <header>
+      <p class="head">HELLO</p>
+      <p class="sub">EXPLORE MY ARTWORKS.</p>
+    </header>
+
+  <table align=center>
+
+    <tr>
+      <td><a href="photo1.jpg" target="_blank"><img class="work" src="photo1.jpg"></a></td>
+      <td><a href="photo2.jpg" target="_blank"><img class="work" src="photo2.jpg"></a></td>
+      <td><a href="photo3.JPG" target="_blank"><img class="work" src="photo3.JPG"></a></td>
+      <td><a href="photo4.JPG" target="_blank"><img class="work" src="photo4.JPG"></a></td>
+      <td><a href="photo5.jpg" target="_blank"><img class="work" src="photo5.jpg"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="photo6.jpg" target="_blank"><img class="work" src="photo6.jpg"></a></td>
+      <td><a href="photo7.jpg" target="_blank"><img class="work" src="photo7.jpg"></a></td>
+      <td><a href="photo16.jpg" target="_blank"><img class="work" src="photo16.jpg"></a></td>
+      <td><a href="photo9.jpg" target="_blank"><img class="work" src="photo9.jpg"></a></td>
+      <td><a href="photo12.jpg" target="_blank"><img class="work" src="photo12.jpg"></a></td>
+    </tr>
+
+    <tr>
+      <td><a href="photo8.jpg" target="_blank"><img class="work" src="photo8.jpg"></a></td>
+      <td><a href="photo10.jpg" target="_blank"><img class="work" src="photo10.jpg"></a></td>
+      <td><a href="photo13.jpg" target="_blank"><img class="work" src="photo13.jpg"></a></td>
+      <td><a href="photo11.jpg" target="_blank"><img class="work" src="photo11.jpg"></a></td>
+      <td><a href="photo18.jpg" target="_blank"><img class="work" src="photo18.jpg"></a></td>
+    </tr>
+
+  </table>
+
+  <div id="clockbox"></div>
+
+  <script type="text/javascript">
+  function GetClock(){
+  var d=new Date();
+  var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+  if(nhour==0){ap=" AM";nhour=12;}
+  else if(nhour<12){ap=" AM";}
+  else if(nhour==12){ap=" PM";}
+  else if(nhour>12){ap=" PM";nhour-=12;}
+
+  if(nmin<=9) nmin="0"+nmin;
+  if(nsec<=9) nsec="0"+nsec;
+
+  var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+  document.getElementById('clockbox').innerHTML=clocktext;
+  }
+
+  GetClock();
+  setInterval(GetClock,1000);
+  </script>
+
+  <div class="home">
+    <a href="inside.html">home</a>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="inside.css">
+  </head>
+  <body>
+
+    <header>
+      <p class="head">WELCOME</p>
+      <p class="sub">EXPLORE AND RESPECT MY WEBSITE.</p>
+    </header>
+
+<div class="pics">
+  <a href="https://www.instagram.com/maxstatham_/" target="_blank"><img src="yoo.jpg" alt="">
+  </a>
+  <a href="https://www.facebook.com/max.statham.54" target="_blank"><img src="yooo.jpg" alt="">
+  </a>
+  <a href="work.html"><img src="yoooo.jpg" alt="">
+  </a>
+</div>
+
+<table>
+  <tr>
+  <td>INSTA</td>
+  <td>FACEY</td>
+  <td>WORK</td>
+  </tr>
+</table>
+
+<div id="clockbox"></div>
+
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+  </body>
+</html>
