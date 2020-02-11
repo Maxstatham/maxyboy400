@@ -8,9 +8,8 @@
   <body>
 
     <header>
-      <p id="head">MACALLISTER.</p>
-      <p class="by">"WEEKLY1" Iml400.</p>
-      <p class="by">Spring 2020.</p>
+      <a href="index.html"><img class="head" src="macs.png" alt=""></a>
+      <div class="by">WEEKLY1 IML400, 2020</div>
     </header>
 
     <div class="container">
@@ -21,48 +20,39 @@
       <p>Our discussion in class about ambiguity was extremely engaging and adds to my initial thoughts. Life is very grey, there is not a lot of black and white. When Osden chooses to stay on the planet, he chooses a life of pure unambiguous action where the only other sentient doesn’t singularly think or act. For Osden this was better than living in the confusing world of grey. So does this mean that it’s better to live unambiguously. As humans it’s impossible to live in black and white with the society we have created. I wonder if it was intended for us to live ambiguous lives because of our intelligence. Or would it be better if we weren’t?</p>
       </div>
 
-      <div id="clockbox"></div>
+      <div class="bottom">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="weeklies.html">weeklies</a></li>
+          <li><a class="bruh" href="projects.html">projects</a></li>
+          <li>explore with respect. c.2020 copyright.</li>
 
-        <script type="text/javascript">
-        function GetClock(){
-        var d=new Date();
-        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+          <div id="clockbox"></div>
 
-        if(nhour==0){ap=" AM";nhour=12;}
-        else if(nhour<12){ap=" AM";}
-        else if(nhour==12){ap=" PM";}
-        else if(nhour>12){ap=" PM";nhour-=12;}
+            <script type="text/javascript">
+            function GetClock(){
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
 
-        if(nmin<=9) nmin="0"+nmin;
-        if(nsec<=9) nsec="0"+nsec;
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
 
-        var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
-        document.getElementById('clockbox').innerHTML=clocktext;
-        }
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
 
-        GetClock();
-        setInterval(GetClock,1000);
-        </script>
+            var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+            document.getElementById('clockbox').innerHTML=clocktext;
+            }
 
-      <div class="text2">
-        Please explore with respect. c.2020 All rights reserved.
+            GetClock();
+            setInterval(GetClock,1000);
+            </script>
+
+        </ul>
       </div>
-
-      <div class="home">
-        <a href="weeklies.html">Back.</a>
-      </div>
-
-      <div class="logo">
-        <a href="https://www.instagram.com/maxstatham_/" target="_blank">
-          <img class="insta" src="instagram.png" alt=""></a>
-
-          <a href="https://www.facebook.com/max.statham.54" target="_blank">
-            <img class="fb" src="facebook.png" alt=""></a>
-
-          <a href="https://www.linkedin.com/in/max-statham-1a3b61123/" target="_blank">
-            <img class="linkdin" src="linkedin.png" alt=""></a>
-
-      </div>
+    </div>
 
   </body>
 </html>

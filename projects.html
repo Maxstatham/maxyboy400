@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PROJECTS</title>
+    <link rel="stylesheet" href="projects.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html"><img class="head" src="macs.png" alt=""></a>
+      <div class="by">PROJECTS IML400, 2020</div>
+    </header>
+
+    <div class="container">
+      <div class="column">
+        <a href="project1/index.html" target="_blank"><img src="yoo.jpg" class="image"alt=""></a>
+          <div class="middle">
+            <div class="text">PROJECT1</div>
+          </div>
+      </div>
+
+      <div class="column">
+        <a href="projects.html"><img src="yooo.jpg" class="image"alt=""></a>
+          <div class="middle2">
+            <div class="text">PROJECT2</div>
+          </div>
+      </div>
+
+      <div class="column">
+        <a href="projects.html"><img src="yooo.jpg" class="image"alt=""></a>
+          <div class="middle3">
+            <div class="text">PROJECT3</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="weeklies.html">weeklies</a></li>
+        <li><a class="bruh" href="projects.html">projects</a></li>
+        <li>explore with respect. c.2020 copyright.</li>
+
+        <div id="clockbox"></div>
+
+          <script type="text/javascript">
+          function GetClock(){
+          var d=new Date();
+          var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+          if(nhour==0){ap=" AM";nhour=12;}
+          else if(nhour<12){ap=" AM";}
+          else if(nhour==12){ap=" PM";}
+          else if(nhour>12){ap=" PM";nhour-=12;}
+
+          if(nmin<=9) nmin="0"+nmin;
+          if(nsec<=9) nsec="0"+nsec;
+
+          var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+          document.getElementById('clockbox').innerHTML=clocktext;
+          }
+
+          GetClock();
+          setInterval(GetClock,1000);
+          </script>
+
+      </ul>
+    </div>
+
+  </body>
+</html>

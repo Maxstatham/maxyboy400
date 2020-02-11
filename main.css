@@ -1,4 +1,9 @@
 body {
+  background: url(back2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0;
 }
 
@@ -18,29 +23,39 @@ body {
     font-style: normal;
 }
 
-#head {
-  font-size: 16px;
-  text-align: center;
-  color: black;
-  margin-top: 160px;
-  margin-bottom: 0;
-  font-family: tw_cen_mt_stdsemibold;
+.head {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  margin-top: 340px;
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 1.5s;
 }
 
 .by {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
-  color: black;
-  margin-top: 0;
+  color: white;
+  margin-top: 15px;
   margin-bottom: 0;
-  font-family: tw_cen_mt_stdregular;
+  font-family: courier;
+  font-weight: normal;
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 1.5s;
 }
 
 .container {
-  width: 40%;
+  width: 150px;
+  height: 150px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 70px;
   position: relative;
+  font-family: courier;
+  font-size: 12px;
+  color: white;
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 1.5s;
 }
 
 .container::after {
@@ -49,100 +64,97 @@ body {
   display: table;
 }
 
-.column {
-  width: 49%;
-  float: left;
-  padding: 0.5%;
-}
-
-.image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  opacity: 0.7;
-}
-
-.middle {
-  transition: all 0.4s ease-in-out 0s;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.middle2 {
-  transition: all 0.4s ease-in-out 0s;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.column:hover .image {
-  opacity: 0.3;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.column:hover .middle {
-  opacity: 1;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.column:hover .middle2 {
-  opacity: 1;
-  transition: all 0.4s ease-in-out 0s;
-}
-
-.text {
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
-  font-family: tw_cen_mt_stdregular;
-}
 
 #clockbox {
-  text-align: center;
-  color: black;
+  width: 150px;
+  margin: auto;
+  text-align: left;
+  color: white;
   margin-top: 30px;
-  font-size: 14px;
-  font-family: tw_cen_mt_stdregular;
+  font-size: 11px;
+  font-family: courier;
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 1.5s;
 }
 
 .text2 {
-  color: black;
-  font-size: 12px;
+  width: 150px;
+  margin: auto;
+  color: white;
+  font-size: 11px;
   margin-top: 10px;
-  font-family: tw_cen_mt_stdregular;
-  text-align: center;
+  font-family: courier;
+  text-align: left;
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 1.5s;
 }
 
 .logo {
-  width:85px;
+  width: 150px;
+  margin: auto;
   height:10px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   opacity: 0.8;
+  -webkit-animation-name: appear;
+  -webkit-animation-duration: 1.5s;
 }
 
 .insta {
-  float: right;
+  float: left;
   width: 15px;
   padding-right: 10px
 }
 .fb {
-  float: right;
+  float: left;
   width: 15px;
   padding-right: 10px
 }
 
 .linkdin {
-  float: right;
+  float: left;
   width: 15px;
   padding-right: 10px
+}
+
+.bottom {
+  font-family: courier;
+  font-size: 11px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 35px;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+li a:link {
+  color: white;
+}
+
+li a:visited {
+  color: white;
+}
+
+li a:hover {
+    color: #eec3a6;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+@-webkit-keyframes appear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
