@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="weekly.css">
+    <title>WEEKLY3</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html"><img class="head" src="maxxx.png" alt=""></a>
+      <div class="by">WEEKLY3 IML400, 2020</div>
+    </header>
+
+    <div class="container">
+      <p>Benjamin Bratton’s “The Black Stack,” is a provocative proposal for the layering of infrastructure (both physical and non-physical) of our world in the near future. Bratton talks about how planetary scale computation should be seen as a coherent formation of a digital megastructure. The “Black Stack,” then, is not our infrastructure at present, but what could be in the future.</p>
+
+      <p>As this megastructure develops, our current geopolitical structure (with boundaries of jurisdiction and power) is becoming outdated. A new spatial structure is accidentally forming and we do not currently have the means to govern it. This topic reminds me of a new Netflix series called, “Dont Fuck With Cats.” The series documents an internet serial killer who posted videos of himself murdering people and animals online. Investigators try to catch the person, however, his physical location was in flux, and with that came a whole bunch of jurisdiction issues. Who has the power?</p>
+
+      <p>So how do we adapt to a new space of political power and governance to organise 7 billion people? Does geolocation matter at all anymore? Do we throw out our current infrastructure of the world? Will this change our architecture and urban planning for metropolitan cities?Will tech giants, like Google, become a sort of new government? Will they take advantage of this shift? WIll the world fall into unordered, unstructured chaos? It is interesting to theorize how a new world like this would navigate in both a physically and non-physically. The shadow of the “black stack” may be lifting very soon.</p>
+      </div>
+
+      <div class="bottom">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="weeklies.html">weeklies</a></li>
+          <li><a class="bruh" href="projects.html">projects</a></li>
+          <li>explore with respect. c.2020 copyright.</li>
+
+          <div id="clockbox"></div>
+
+            <script type="text/javascript">
+            function GetClock(){
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+            document.getElementById('clockbox').innerHTML=clocktext;
+            }
+
+            GetClock();
+            setInterval(GetClock,1000);
+            </script>
+
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>

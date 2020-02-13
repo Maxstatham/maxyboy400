@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="weekly.css">
+    <title>WEEKLY4</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html"><img class="head" src="maxxx.png" alt=""></a>
+      <div class="by">WEEKLY4 IML400, 2020</div>
+    </header>
+
+    <div class="container">
+      <p>In another extremely thought-provoking read, Hito Steyerl’s text In Free Fall: A Thought on Vertical Perspective guides us through the evolution of how we observe time and space. I connected deeply with this piece, as Steyerl describes how we, as humans, have an obsession of grounding; a way to view, orientate, and navigate in a predictable nature. A sense of grounding creates safety, comfort, and purpose, when in actual fact, our grounded plane is flawed.</p>
+
+      <p>While hard to comprehend at first, Steyerl’s example of W. Turner’s painting The Slave Ship made her argument much clearer. With the loss of the horizon and linear perspective, viewers experience a chaotic disorientation, unable to render a grounded view within its constraints. The feeling is uneasy and unpredictable.</p>
+
+      <p>With today's technology, we have created new spaces in which to perceive the world. At the core of Steyerl’s argument, I think she is trying to say that throughout history we have continually changed the frame to navigate our existence, clinging at the ground to stay within the comprehensible bounds of orientation through time and space. However, there is no framework of perspective that can simulate reality. She says that, “It takes place in an opening we could endure or enjoy, embrace or suffer, or simply accept as reality.” I feel that it is necessary to embrace a path of excitement toward movement and change. True happiness lies in the ability to adapt.</p>
+      </div>
+
+      <div class="bottom">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="weeklies.html">weeklies</a></li>
+          <li><a class="bruh" href="projects.html">projects</a></li>
+          <li>explore with respect. c.2020 copyright.</li>
+
+          <div id="clockbox"></div>
+
+            <script type="text/javascript">
+            function GetClock(){
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+            document.getElementById('clockbox').innerHTML=clocktext;
+            }
+
+            GetClock();
+            setInterval(GetClock,1000);
+            </script>
+
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
