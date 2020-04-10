@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="weekly.css">
+    <title>WEEKLY6</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html"><img class="head" src="maxxx.png" alt=""></a>
+      <div class="by">WEEKLY6 IML400, 2020</div>
+    </header>
+
+    <div class="container">
+      <p>Hito Steyerl’s The Spam of the Earth: Withdrawal from Representation is an indepth look at the role and representation of image spam. What surprised and interested me is how detailed one can look at such an ignored - almost the white noise of images - phenomena and make connections to deep relevant topics.
+</p>
+
+      <p>I want to focus on Steyerl’s section of Mimicry and Enhancement as her argument captivates me. I agree with the fact that a withdrawal from representation comes from a withdrawal from the camera. “Within a fully immersive media landscape, pictorial representation - which was seen as a prerogative and a political privilege for a long time - feels more like a threat.” The online environment - which can be seen as a liberating field of freedom and innovation and freedom - has also followed a complex path of invasion and ridicule, where constant exposure and surveillance (from the camera and each other) has placed further control, making hegemony an increasingly internalized thought. Our progress through technology and big data has done almost the opposite of its intentions. We have reached a point where people wish to ‘disappear’ from the visual territory of constant exposure and escape this chaotic representation.
+</p>
+
+      <p>However, The link between this act of avoiding representation and image spam I feel is loose. Yes, image spam contains dominant desires and representations, which are designed to push people into conformity and consumption, but people may refuse this type of image for different reasons other than the refusal of a certain type of portrayal. For me, when I encounter image spam, I don't think about the contents of the image, but a scam, potential virus, or a threat to the health of my computer. I do not reject image spam for its content message, but for its own representation. So, while I agree with Steyerl’s argument, her link to spam I believe is subjective.
+</p>
+      </div>
+
+      <div class="bottom">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="weeklies.html">weeklies</a></li>
+          <li><a class="bruh" href="projects.html">projects</a></li>
+          <li>explore with respect. c.2020 copyright.</li>
+
+          <div id="clockbox"></div>
+
+            <script type="text/javascript">
+            function GetClock(){
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+            document.getElementById('clockbox').innerHTML=clocktext;
+            }
+
+            GetClock();
+            setInterval(GetClock,1000);
+            </script>
+
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
