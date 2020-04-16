@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="weekly.css">
+    <title>WEEKLY7</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html"><img class="head" src="maxxx.png" alt=""></a>
+      <div class="by">WEEKLY7 IML400, 2020</div>
+    </header>
+
+    <div class="container">
+      <p>I found this week’s reading to be most enjoyable, as it offered interesting insights to the world’s current situation. Recently, I have been reading and watching a lot about the pandemic now controlling our world. I have been hypothesizing as to why Asian countries are managing COVID-19 with much greater ease, and Byung-Chul Han’s reading offered logical yet troublesome insights.
+</p>
+
+      <p>To my surprise, I had no idea on the amount of surveillance Asian Citizens are exposed to in everyday life. It became obvious that a structure with total control over the population would prevail over a structure that values individualism, such as Europe. The masses are forced to think and act collectively and therefore, are extremely effective at combating something like a virus.However, only in a pandemic is where I believe this structure should succeed. The point made where China will ‘use its successful digital police state model’ to sell to Western countries will almost undoubtedly be opposed by the people. I believe that many Asian populations wish to argue the same point, but it is too late to speak out; as their ‘freedom of speech’ could harm their credit scores. To say that Asian people are less reluctant and more obedient based on an authoritarian mentality is generalised and assumed. We do not know what they think as they cannot act and express freely on a given platform. We only know what the state wants us to think they think.
+</p>
+
+      <p>So, yes, total and utter control through mass surveillance and non-existent privacy is obviously a more successful model for combating Coronavirus. But is it the right way to live without a pandemic? Absolutely not. China will not be able to persuade and sell their model to Western societies. To have an all-knowing all-seeing state structure in place simply out of fear and prevention is absurd. We must realise that we cannot control everything in life.
+</p>
+      </div>
+
+      <div class="bottom">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="weeklies.html">weeklies</a></li>
+          <li><a class="bruh" href="projects.html">projects</a></li>
+          <li>explore with respect. c.2020 copyright.</li>
+
+          <div id="clockbox"></div>
+
+            <script type="text/javascript">
+            function GetClock(){
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+            document.getElementById('clockbox').innerHTML=clocktext;
+            }
+
+            GetClock();
+            setInterval(GetClock,1000);
+            </script>
+
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
