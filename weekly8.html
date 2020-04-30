@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="weekly.css">
+    <title>WEEKLY8</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html"><img class="head" src="maxxx.png" alt=""></a>
+      <div class="by">WEEKLY8 IML400, 2020</div>
+    </header>
+
+    <div class="container">
+      <p>I have not encountered much of Karl Marx’s work, but I have heard much about his theories and understanding on capitalism. His journal The Fragment on Machines was both interesting and confusing. While I understood the general progression of the journal, the details were hard to follow. In saying that, the text still provided a provoking read.
+</p>
+
+      <p>It is incredible that someone who lived over 150 years ago could accurately predict our current social structure. The exponential growth rate of technology has seen new forms of machinery implemented into the means of production of goods, and the point of production as total automation is almost upon us. Marx states, “The development of the means of labour into machinery is not an accidental moment of capital, but is rather the historical reshaping of the traditional, inherited means of labour into a form adequate to capital.” It makes sense that as capitalism aims to reduce costs and maximize efficiency and profits, the displacement of workers for machines is inevitable. What’s interesting is how Marx describes capitalism’s contradiction unto itself, stating that as capitalism moves towards it’s pinnacle existence of production, society will move to interact outside the frames of the capitalist structure, hence bringing about its own deconstruction.
+</p>
+
+      <p>I disagree with Marx’s theory. As we move towards an automated process of production, capitalism has morphed and changed with time, favoring the privileged over the masses.
+While machines have taken the place of the inferior workers in the means of production, capitalism has created new jobs, ones that offer no production and little value, to ensure its own survival. Capital now offers jobs with little stability, satisfaction, or purpose that seem to take up all of our time. This bleak picture of the future reminds me of our previous reading on accelerationism and how it would be nice to shift our current societal structure.
+</p>
+      </div>
+
+      <div class="bottom">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="weeklies.html">weeklies</a></li>
+          <li><a class="bruh" href="projects.html">projects</a></li>
+          <li>explore with respect. c.2020 copyright.</li>
+
+          <div id="clockbox"></div>
+
+            <script type="text/javascript">
+            function GetClock(){
+            var d=new Date();
+            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+            if(nhour==0){ap=" AM";nhour=12;}
+            else if(nhour<12){ap=" AM";}
+            else if(nhour==12){ap=" PM";}
+            else if(nhour>12){ap=" PM";nhour-=12;}
+
+            if(nmin<=9) nmin="0"+nmin;
+            if(nsec<=9) nsec="0"+nsec;
+
+            var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+            document.getElementById('clockbox').innerHTML=clocktext;
+            }
+
+            GetClock();
+            setInterval(GetClock,1000);
+            </script>
+
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
